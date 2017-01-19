@@ -6,6 +6,6 @@
 a[href^="//"]:after, 
 a[href^="http://"]:after, 
 a[href^="https://"]:after {
-  content: url(assets/img/iconExternalLink.png);
+  content: url(../img/iconExternalLink.png);
   margin: 0 0 0 5px;
 }
