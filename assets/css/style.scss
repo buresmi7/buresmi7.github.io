@@ -9,3 +9,10 @@ a[href^="https://"]:after {
   content: url(../img/iconExternalLink.png);
   margin: 0 0 0 5px;
 }
+
+a[href^="//buresmi7.github.io/"]:after, 
+a[href^="http://buresmi7.github.io/"]:after, 
+a[href^="https://buresmi7.github.io/"]:after {
+  content: '';
+  margin: 0;
+}

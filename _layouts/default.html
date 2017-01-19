@@ -25,17 +25,16 @@
           <a href="https://www.linkedin.com/in/michal-bure%C5%A1-88397720/">LinkedIn</a>
         </p>
 
-        {% if site.show_downloads %}
-          <ul>
-            <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
-            <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
-            <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
-          </ul>
-        {% endif %}
       </header>
       <section>
 
       {{ content }}
+
+      <ul>
+      {% for post in site.posts %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+      </ul>
 
       </section>
       <footer>
