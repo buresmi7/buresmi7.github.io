@@ -8,4 +8,4 @@ To mě zase kamarád přemluvil na pivko po práci a protože spojnice mezi naš
 
 ![Hermelín v baru TUNEL](/assets/posts/2016-11-23-hermelin-v-tunelu/hermelin_small.jpg)
 
-[Originální fotka](/assets/posts/2016-11-23-hermelin-v-tunelu/hermelin_big.jpg)
+[Originální fotka (1.6 MB)](/assets/posts/2016-11-23-hermelin-v-tunelu/hermelin_big.jpg)
