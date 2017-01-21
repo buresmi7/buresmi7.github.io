@@ -31,9 +31,9 @@
       {{ content }}
 
       {% for post in site.posts %}
-        {{ post.title }}
+        <h2>{{ post.title }}</h2>
         {{ post.content | strip_html | truncatewords:75}}
-        <a href="{{ post.url }}">Zobrazit celé...</a>
+        <p><a href="{{ post.url }}">Zobrazit celé...</a></p>
       {% endfor %}
 
       </section>
