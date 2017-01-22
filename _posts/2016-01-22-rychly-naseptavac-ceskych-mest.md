@@ -3,6 +3,7 @@ layout: posts
 title: Rychlý našeptávač českých měst
 category: Programování
 tags: []
+comments: true
 ---
 Nedávno jsem řešil rychlost našeptávače měst ve formuáři. Jednalo se o projekt v Nette a tenkrát jsem zvolil nejjednodušší variantu: vložit cca 6000 měst do javascriptového pole a při zadání alespoň tří znaků skript prohledával celé pole. Pro lepší seřazení jsem použil přiřazení váhy každému městu které odpovídalo zadání. Tohle celé mělo jednu velkou nevýhodu. Bylo to pomalé. Ne na stolním počítači s dostatkem výkonu, ale na slabších noteboocích či slim stanicích byla odezva někdy i více jak 5 sekund.
 
