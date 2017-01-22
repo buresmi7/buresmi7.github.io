@@ -44,7 +44,7 @@ Výsledná rychlost v aplikaci se pohybuje mezi 200-500 ms, protože API s naše
 
 Specifikem projektu bylo i to, že našeptávač musí rozlišovat části Prahy a tak pole obsahuje kromě měst i všechny části Prahy.
 
-Celý kód je v samostatné knihovně dostupné na GitHubu: [czech-cities-autocomplete](https://github.com/buresmi7/czech-cities-autocomplete)
+Celý kód je v samostatné knihovně dostupný na GitHubu: [czech-cities-autocomplete](https://github.com/buresmi7/czech-cities-autocomplete)
 
 Pro samotný našeptávač jsem použil knihovnu [typeahead.js](https://twitter.github.io/typeahead.js/) a tento kód:
 
