@@ -3,6 +3,7 @@ layout: posts
 title: Hermelín v tunelu
 category: Hermelín
 tags: []
+comments: true
 ---
 To mě zase kamarád přemluvil na pivko po práci, a protože spojnice mezi našimi pracovištěmi se nachází mezi Karlínem a Žižkovem, hospodu jsme hledali v této lokalitě. Oblak cigaretového kouře nás odehnal od "Rock 'n' Pizza" a zahnal překvapivě hned vedle do baru TUNEL.
 
