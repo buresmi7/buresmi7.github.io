@@ -4,13 +4,13 @@ title: Rychlý našeptávač českých měst
 category: Programování
 tags: []
 ---
-Nedávno jsem řešil rychlost našeptávače měst ve formuáři. Jednalo se o projekt v Nette a tenkrát jsem zvolil nejjednodušší variantu: vložit cca 6000 měst do javascriptového pole a při zadání alespoň tří znaků skript prohledával celé pole. Pro lepší seřazení jsem použil přiřazení váhy každému městu které odpovídalo zadání. Tohle celé mělo jednu velkou nevýhodu. Bylo to pomalé. Ne na stolním počítači s dostatkem výkonu ale na slabších noteboocích či slim stanicích byla odezva někdy i více jak 5 sekund.
+Nedávno jsem řešil rychlost našeptávače měst ve formuáři. Jednalo se o projekt v Nette a tenkrát jsem zvolil nejjednodušší variantu: vložit cca 6000 měst do javascriptového pole a při zadání alespoň tří znaků skript prohledával celé pole. Pro lepší seřazení jsem použil přiřazení váhy každému městu které odpovídalo zadání. Tohle celé mělo jednu velkou nevýhodu. Bylo to pomalé. Ne na stolním počítači s dostatkem výkonu, ale na slabších noteboocích či slim stanicích byla odezva někdy i více jak 5 sekund.
 
-Zvolil jsem řešení, které přesunulo algoritmus do PHP části aplikace. Dosáhl jsem určitého zrychlení a navíc jsem se zbavil závislosti na výkonu stanice uživatele. Stále to ovšem byly časy hodně nad jednu vteřinu. Než jsem stihl zaneřádit kód keší napadlo mě celou funkcionalitu přesunout ven jako mikroslužbu a s rychlostí experimentovat tam.
+Zvolil jsem řešení, které přesunulo algoritmus do PHP části aplikace. Dosáhl jsem určitého zrychlení a navíc jsem se zbavil závislosti na výkonu stanice uživatele. Stále to ovšem byly časy hodně nad jednu vteřinu. Než jsem stihl zaneřádit kód keší, napadlo mě celou funkcionalitu přesunout ven jako mikroslužbu a s rychlostí experimentovat tam.
 
 Mikroslužbu jsem se rozhodl napsat v javascriptu a hostovat přes AWS Lambda a AWS Api Gateway. Obě služby jsou hezky propojené a spuštění mikroslužby není těžké. Výhoda Lambdy je, že lze škálovat výkon a tak i tento pomalý algoritmus lze s přidáním více výkonu provozovat s rychlou odezvou. Maximální velikost skriptů je 10 MB a tak se do skriptu bez problému vešel i zmiňovaný seznam měst.
 
-Cíl byl téměř splňen. Našeptávač už byl použitelný a kód byl oddělen aplikace. Už si stačilo jen hrát s algoritmem. Nebudu lhát, nejsem žádný chytrák a algoritmizace není moje silná stránka. Už jsem se smiřoval s dostatečným řešením, když mi kolega poradil rozdělit města do skupin podle začínajících písmen. Princip je založen na tom, že našeptávači stačí prohledávat pouze města, která zadaným řetězcem začínají a že našeptávač začíná našptávat po třetím zadaném písmenu.
+Cíl byl téměř splňen. Našeptávač už byl použitelný a kód byl oddělen od původní aplikace. Už si stačilo jen hrát s algoritmem. Nebudu lhát, nejsem žádný chytrák a algoritmizace není moje silná stránka. Už jsem se smiřoval s dostatečným řešením, když mi kolega poradil rozdělit města do skupin podle začínajících písmen. Princip je založen na tom, že našeptávači stačí prohledávat pouze města, která zadaným řetězcem začínají a že našeptávač začíná našeptávat po třetím zadaném písmenu.
 
 Vytvořil jsem tedy asociativní pole (PHP hatmatilka, ve světě Javascriptu se jedná o objekty), kde klíčem jsou první tři písmena a prvkem je pole se seznamem měst která začínají na tyto tři písmena:
 
@@ -40,7 +40,7 @@ Pro názornost přikládám i graf odezvy:
 
 ![Graf odezvy](/assets/posts/2016-01-22-rychly-naseptavac-ceskych-mest/latency.png)
 
-Výsledná rychlost v aplikaci se pohybuje mezi 200-500 ms, protože API s našeptávačem je volané skrze Nette ajax a Nette controller. Je to z důvodů, že API je zaheslované statickým heslem a PHP skript toto heslo skryje narozdíl od přímého volání z javascriptu na frontendu. Do budoucna bych chtěl i tuto vrstvu vypustit.
+Výsledná rychlost v aplikaci se pohybuje mezi 200-500 ms, protože API s našeptávačem je volané skrze Nette ajax a Nette controller. Je to z důvodů, že API je zaheslované statickým heslem a PHP skript toto heslo skryje, narozdíl od přímého volání z javascriptu na frontendu. Do budoucna bych chtěl i tuto vrstvu vypustit.
 
 Specifikem projektu bylo i to, že našeptávač musí rozlišovat části Prahy a tak pole obsahuje kromě měst i všechny části Prahy.
 
