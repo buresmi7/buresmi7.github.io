@@ -15,24 +15,32 @@ Cíl byl téměř splňen. Našeptávač už byl použitelný a kód byl odděle
 Vytvořil jsem tedy asociativní pole (PHP hatmatilka, ve světě Javascriptu se jedná o objekty), kde klíčem jsou první tři písmena a prvkem je pole se seznamem měst která začínají na tyto tři písmena:
 
 ```javascript
-pra: [
-  {
-      name: "Prackovice nad Labem",
-      parent: "Litoměřice",
-      region: "Ústecký kraj",
-      ascii: "prackovice nad labem"
-  },
-  {
-      name: "Praha 1",
-      parent: "Praha",
-      region: "Hlavní město Praha",
-      ascii: "praha 1"
-  },
-  ...
-]
+{
+    pra: [
+    {
+        name: "Prackovice nad Labem",
+        parent: "Litoměřice",
+        region: "Ústecký kraj",
+        ascii: "prackovice nad labem"
+    },
+    {
+        name: "Praha 1",
+        parent: "Praha",
+        region: "Hlavní město Praha",
+        ascii: "praha 1"
+    },
+    ...
+    ]
+}
 ```
 
 Další optimalizace je atribut "ascii", který by se jinak musel generovat při každém vyhledávání. Přínos je ovšem podle mě (zpětně bráno) sporný.
+
+Pro názornost přikládám i graf odezvy:
+
+![Graf odezvy](/assets/posts/2016-01-22-rychly-naseptavac-ceskych-mest/latency.png)
+
+Výsledná rychlost v aplikaci se pohybuje mezi 200-500 ms, protože API s našeptávačem je volané skrze Nette ajax a Nette controller. Je to z důvodů, že API je zaheslované statickým heslem a PHP skript toto heslo skryje narozdíl od přímého volání z javascriptu na frontendu. Do budoucna bych chtěl i tuto vrstvu vypustit.
 
 Specifikem projektu bylo i to, že našeptávač musí rozlišovat části Prahy a tak pole obsahuje kromě měst i všechny části Prahy.
 
