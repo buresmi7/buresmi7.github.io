@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: Rychlý naseptávač českých měst
+title: Rychlý našeptávač českých měst
 category: Programování
 tags: []
 ---
