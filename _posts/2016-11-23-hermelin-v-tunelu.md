@@ -1,7 +1,8 @@
 ---
 layout: posts
 title: Hermelín v tunelu
-category: Hermelín
+category: hermelin
+category_title: Hermelín
 tags: []
 comments: true
 ---

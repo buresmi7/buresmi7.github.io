@@ -1,7 +1,8 @@
 ---
 layout: posts
 title: Rychlý našeptávač českých měst
-category: Programování
+category: programovani
+category_title: Programování
 tags: []
 comments: true
 ---
