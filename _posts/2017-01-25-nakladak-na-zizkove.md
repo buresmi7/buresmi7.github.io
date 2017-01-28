@@ -16,6 +16,6 @@ Jen co jsme si ťukli, už k nám spěchal hostinský s hermelíny. Jeho náhla 
 
 Už jen zacouvat náklaďákem zpět na střed talíře a mohl jsem fotit. S mým spolusedícím jsem se shodl, že vizuálně je znát rozdíl oproti hermelinu v Tunelu. Chuťově se vydařil a bonusem byla velice pálivá zelená paprička, která sice kousala do jazyka, a pivo nestačilo hasit, ale v žaludku již dala pokoj. Celý dojem bohužel zkazila paprička červená, Která sice pálila úplně stejně ale vůbec nebyla dobrá. A tak největší překvapením byla nakonec účtenka EET, kterou jsme po zaplacení dostali. Moje první, kterou jsem v hospodě dostal.
 
-Nedalo mi to a účtenku jsem zkontroloval na [Daňovém portálu](https://adisspr.mfcr.cz/adistc/adis/idpr_pub/eet/uct/overeni.faces) a výsledek je "Účtenka nebyla v systému nalezena.". Závěr si udělá každý sám.
+Nedalo mi to a účtenku jsem zkontroloval na [Daňovém portálu](https://adisspr.mfcr.cz/adistc/adis/idpr_pub/eet/uct/overeni.faces) a výsledek je "Účtenka nebyla v systému nalezena.". Závěr si udělá každý sám. Můj je vyjádřen hodnocením 3/5.
 
 ![EET účtenka](/assets/posts/2017-01-25-nakladak-na-zizkove/uctenka_small.jpg)
