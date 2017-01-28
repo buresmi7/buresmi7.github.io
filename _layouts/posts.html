@@ -3,7 +3,13 @@ layout: default
 ---
 
 <h2>{{ page.title }}</h2>
-<p><small>{{ page.date | date: "%d. %m. %Y"}}, kategorie: {{ page.category }}</small></p>
+<p>
+  <small>{{ page.date | date: "%d. %m. %Y"}}, kategorie: {{ page.category }}</small>
+  <div class="fb-share-button" 
+		data-href="{{ page.url }}" 
+		data-layout="button_count">
+	</div>
+</p>
 
 {{ content }}
 
