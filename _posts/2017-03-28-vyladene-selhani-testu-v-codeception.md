@@ -116,6 +116,7 @@ class ExtendedWebDriver extends \Codeception\Module\WebDriver {
 A zároveň upravíme metodu `makeFailedScreenshot`, kde na začátku vypneme původní generování screenshotů:
 
 ```php
+<?php
 
 class FailedScreenshotHelper extends \Codeception\Module {
   ...
