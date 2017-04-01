@@ -11,6 +11,8 @@ Codeception je skvělý nástroj pro psaní selenium testů. V práci jej použ�
 Codeception standartně ošetřuje chybný test tak, že kromě červených fontů v konzoli, vygeneruje screenshot obrazovky. Z něho je možné obvykle vyčíst, kde se asi stala chyba. Pokud ovšem potřebuji chybný test speciálně ošetřit, mám možnost použít metodou `_failed`.
 
 ```php
+<?php
+
 class MojeTestovaciTridaCest {
   public function _failed(WebGuy $I) {
     ...
@@ -25,6 +27,8 @@ class MojeTestovaciTridaCest {
 Neštastné je, že screenshot se vygeneruje před zavoláním metody `_failed`. Pokud potřebujete po selhání testu ještě provést nějaké modifikace na stránce, nebo třeba upravit nastavení v zázemí aplikace, screenshot nebude již odpovídat stavu, kdy chyba vznikla. Moje typická situace je - pro některé testy mít speciální nastavení aplikace v zázemí. Poté co test skončí chci mít vše v původním stavu a také poté, když test selže.
 
 ```php
+<?php
+
 class MojeTestovaciTridaCest {
   public function _before(WebGuy $I) {
     $this->prepare();
