@@ -16,6 +16,6 @@ Oslavička to byla taková ta decentní. Oslavenec žádal rady starších pro �
 
 Ten mě totiž zaujal netradiční přílohou a tou jsou nakládané papričky jalapenos. K mexické atmosféře parádní kousek. A musím uznat, že tenhle pikantní hermelín nemá chybu. Pivo zašumělo a chuťové pohárky se jenom třásly po tom náramném gurmánském zážitku. Jsem rozhodnutý, že tohle místo musím navštívit ještě jednou. Jak je známo, perfektní nepotřebuje mnoho slov a tak se více nerozepíšu, protože tenhle hermelín byl právě perfektní.
 
-Za atmosféru a skvělý hermelín a dobré pivo dávám 5/5.
+Za atmosféru, skvělý hermelín a dobré pivo dávám 5/5.
 
 ![Hermelín po mexicku](/assets/posts/2017-06-12-jak-chutna-mexiko/hermelin_mexiko.jpg)
