@@ -6,9 +6,7 @@ category_title: Hermelín
 tags: []
 comments: true
 ---
-Dokonalý hermelín v Mexickém pivním baru už dlouho jsem neměl příležitost přispět na blog
-něčím zajimavym a dnes se naskytla příležitost při zapíjení 30. narozenin kolegy z práce. Akce se
-konala v mnou přehlíženém podniku - Diego pivní bar. 
+Už dlouho jsem neměl příležitost přispět na blog něčím zajimavym a dnes se naskytla příležitost při zapíjení 30. narozenin kolegy z práce. Akce se konala v mnou přehlíženém podniku - Diego pivní bar. 
 
 Oslepen ostrým odpoledním sluncem a omámen 29 stupňovým vedrem, sestupuji do nenapadného sklípku. Kontrastující tma mě oslepuje podruhé a začínám nasávat atmosféru rozpáleného Mexika - konkrétně kontrast rozpálených prérií a tmavých chatrčí bez oken, kde panuje příjemný chládek - jako zde. Tma začíná postupně ztrácet na temnotě a já nacházím stůl s veselím mých kolegů.  Trochu mě znejistil zapuštěný automobil ve stěně nad stolem, ale hosté pod ním vypadali dostatečně klidně.
 
