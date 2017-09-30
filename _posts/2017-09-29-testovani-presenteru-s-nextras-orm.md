@@ -15,6 +15,8 @@ Nextras Orm se vyznačuje třemi základními prvky. Entita. Mapper. Repozitář
 Příklad entity:
 
 ```php
+<?php
+
 /**
  * @property int       $id        {primary}
  * @property string    $url
