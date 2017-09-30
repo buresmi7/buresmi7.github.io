@@ -209,12 +209,21 @@ class ArticlePresenterTest {
     /**
      * @return Tester\DomQuery
      */
-    private function runPresenter($presenterName, $method, array $params, array $post)
-    {
+    private function runPresenter(
+        $presenterName,
+        $method,
+        array $params,
+        array $post
+    ) {
         $presenterFactory = $this->container->getService('application.presenterFactory');
         $presenter = $presenterFactory->createPresenter($presenterName);
         $presenter->autoCanonicalize = false;
-        $request = new Application\Request($presenterName, $method, $params, $post);
+        $request = new Application\Request(
+            $presenterName,
+            $method,
+            $params,
+            $post
+        );
         $response = $presenter->run($request);
 
         Assert::type(Template::class, $response->getSource());
