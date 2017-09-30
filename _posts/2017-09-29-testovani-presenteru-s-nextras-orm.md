@@ -141,7 +141,7 @@ class ArticlesServise {
 
 Myslím, že je na čase konečně napsat i nějaký ten test. Budeme toho potřebovat docela dost a ze všeho nejvíce mapper, který nebude mapovat repozitář na databázi ale na pole (ArrayMapper). Takový mapper je naštěstí součástí knihovny Nextras Orm. Nebudu totiž používat mock, ale místo reálné databáze použiji paměť, kde budou data persistentní po dobu běhu testu. Mohl bych sice mockovat metody repozitářů, ale je to zbytečně moc práce a navíc takto otestuji vrstvu repozitářů s veškerou logikou. A to je prostě super.
 
-Nejdříve je potřeba správně nastavit mapper v configuraci aplikace.
+Nejdříve je potřeba správně nastavit mapper v konfiguraci aplikace.
 
 config.test.neon:
 ```python
@@ -155,7 +155,7 @@ services:
     orm.mappers.categories: Nextras\Orm\TestHelper\TestMapper
 ```
 
-Pro testování jsem zvolil, jak jinak, Nette Tester. 
+Pro testování jsem zvolil, jak jinak, [Nette Tester](https://tester.nette.org). 
 
 ```php
 <?php
@@ -242,4 +242,6 @@ class ArticlePresenterTest {
 
 A od teď už je testování presenteru s databází snadné :). Část s vytvářením presenteru, requestu a domu jsem pro přehlednost schoval do vlastní metody.
 
-Je tu ještě jedna věc pro čtenáře se nebojí tmy. Pokud jste potřebovali napsat vlastní SQL dotaz, použili jste jistě správně mapper, ale co s tím v testu? Naštěstí mapper použitý pro testy má metodu `addMethod`, ve které můžete definovat medotu a pomocí funkce i chování a výsledek, který má tato metoda mít.
+Je tu ještě jedna věc pro čtenáře, co se nebojí tmy. Pokud jste potřebovali napsat vlastní SQL dotaz, použili jste jistě správně mapper, ale co s tím v testu? Naštěstí mapper použitý pro testy má metodu `addMethod`, ve které můžete definovat metodu a pomocí funkce i chování a výsledek, který má tato metoda mít.
+
+Všude slyším, jaké jsou ORM frameworky zlo, ale pracovat s Nextras Orm byla radost, i na netriviálním projektu.
