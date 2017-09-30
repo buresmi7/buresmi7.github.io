@@ -31,6 +31,8 @@ class Article extends Nextras\Orm\Entity\Entity
 Mapper:
 
 ```php
+<?php
+
 class ArticlesMapper extends Nextras\Orm\Mapper\Mapper
 {
     protected $tableName = 'articles';
@@ -40,6 +42,8 @@ class ArticlesMapper extends Nextras\Orm\Mapper\Mapper
 Repozitář:
 
 ```php
+<?php
+
 /**
  * @method Article|NULL getById($id)
  */
@@ -59,6 +63,8 @@ V anotaci je pro přehlednost uvedena metoda, která je poděděná. Ostatní me
 Pak je tu ještě jedna třída, kterou prozatím můžeme chápat jako agregátor repozitářů, nazveme ji prostě `Orm`.
 
 ```php
+<?php
+
 /**
  * @property-read ArticlesRepository    $articles
  * @property-read CategoriesRepository  $categories
@@ -73,6 +79,10 @@ Pokud jde o podrobnosti, je lepší si přečíst dokumentaci, ale základní st
 Příklad typických metod pro repozitář:
 
 ```php
+<?php
+
+...
+
     /**
      * @return Article|NULL
      */
@@ -98,6 +108,7 @@ Příklad typických metod pro repozitář:
 Chvilku se pozastavím u `$this->persist`. Kdo již nastudoval dokumentaci ví, že abyste entitu uložili, musíte zavolat také metodu `flush()`. Já se držím konvence volat `flush()` mimo repozitář, kvůli návrhovému vzoru [Work Of Unit](https://www.codeproject.com/Articles/581487/Unit-of-Work-Design-Pattern). Jde o to, že chci změny propsat v jedné transakci a to i nad rozdílnými repozitáři. Hned ukáži jak to myslím:
 
 ```php
+<?php
 
 class ArticlesServise {
 
@@ -135,6 +146,7 @@ services:
 Pro testování jsem zvolil, jak jinak, Nette Tester. 
 
 ```php
+<?php
 
 use Nette\DI\Container;
 use Tester;
