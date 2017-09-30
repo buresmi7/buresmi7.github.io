@@ -201,7 +201,12 @@ class ArticlePresenterTest {
             'url' => 'muj-clanek'
         ];
 
-        $dom = $this->runPresenter($presenterName, 'GET', $params, [])
+        $dom = $this->runPresenter(
+            $presenterName,
+            'GET',
+            $params,
+            []
+        );
 
         Assert::equal('Můj článek', (string) $dom->find('h1')[0]);
     }
