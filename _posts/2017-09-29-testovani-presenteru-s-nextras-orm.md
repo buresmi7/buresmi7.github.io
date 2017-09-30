@@ -82,7 +82,7 @@ class Orm extends Model
 }
 ```
 
-Pokud jde o podrobnosti, je lepší si přečíst dokumentaci, ale základní struktura je jasná. Do repozitáře píši všechny metody, které mají co dočinění se čtením dat či jejich ukládáním. Mapper pak slouží mimo jiné k psaní složitých dotazů, na které je Orm krátké. Pokud možno je dobré se tomu vyhnout (testování je pak složitější ale o tom až na konci).
+Pokud jde o podrobnosti, je lepší si přečíst dokumentaci, ale základní struktura je jasná. Do repozitáře píši všechny metody, které mají co dočinění se čtením dat či jejich ukládáním. Mapper pak slouží mimo jiné k psaní složitých dotazů, na které je Orm krátké. Pokud možno je dobré se tomu vyhnout (testování je pak krapet složitější ale o tom až na konci).
 
 Příklad typických metod pro repozitář:
 
@@ -113,7 +113,7 @@ Příklad typických metod pro repozitář:
     }
 ```
 
-Chvilku se pozastavím u `$this->persist`. Kdo již nastudoval dokumentaci ví, že abyste entitu uložili, musíte zavolat také metodu `flush()`. Já se držím konvence volat `flush()` mimo repozitář, kvůli návrhovému vzoru [Work Of Unit](https://www.codeproject.com/Articles/581487/Unit-of-Work-Design-Pattern). Jde o to, že chci změny propsat v jedné transakci a to i nad rozdílnými repozitáři. Hned ukáži jak to myslím:
+Chvilku se pozastavím u `$this->persist`. Kdo již nastudoval dokumentaci ví, že abyste entitu uložili, musíte zavolat také metodu `flush()`. Já se držím konvence volat `flush()` mimo repozitář, kvůli návrhovému vzoru [Work Of Unit](https://www.codeproject.com/Articles/581487/Unit-of-Work-Design-Pattern). Jde o to, že chci změny propsat v jedné transakci a to i nad rozdílnými repozitáři. Takže `flush()` používám pouze ve službách které pracují s repozitáři. Hned ukáži jak to myslím:
 
 ```php
 <?php
@@ -139,7 +139,7 @@ class ArticlesServise {
 }
 ```
 
-Myslím, že je na čase konečně napsat i nějaký ten test. Budeme toho potřebovat docela dost a ze všeho nejvíce mapper, který nebude mapovat repozitář na databázi ale na pole. Takový mapper je naštěstí součástí knihovny Nextras Orm. Nebudu totiž používat mock, ale místo reálné databáze použiji paměť, kde budou data persistentní po dobu běhu testu.
+Myslím, že je na čase konečně napsat i nějaký ten test. Budeme toho potřebovat docela dost a ze všeho nejvíce mapper, který nebude mapovat repozitář na databázi ale na pole (ArrayMapper). Takový mapper je naštěstí součástí knihovny Nextras Orm. Nebudu totiž používat mock, ale místo reálné databáze použiji paměť, kde budou data persistentní po dobu běhu testu. Mohl bych sice mockovat metody repozitářů, ale je to zbytečně moc práce a navíc takto otestuji vrstvu repozitářů s veškerou logikou. A to je prostě super.
 
 Nejdříve je potřeba správně nastavit mapper v configuraci aplikace.
 
