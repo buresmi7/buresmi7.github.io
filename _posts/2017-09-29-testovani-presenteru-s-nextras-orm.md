@@ -17,13 +17,15 @@ Příklad entity:
 ```php
 <?php
 
+use Nextras\Orm\Entity\Entity;
+
 /**
  * @property int       $id        {primary}
  * @property string    $url
  * @property string    $title
  * @property string    $content
  */
-class Article extends Nextras\Orm\Entity\Entity
+class Article extends Entity
 {
 }
 ```
@@ -33,7 +35,9 @@ Mapper:
 ```php
 <?php
 
-class ArticlesMapper extends Nextras\Orm\Mapper\Mapper
+use Nextras\Orm\Mapper\Mapper;
+
+class ArticlesMapper extends Mapper
 {
     protected $tableName = 'articles';
 }
@@ -44,10 +48,12 @@ Repozitář:
 ```php
 <?php
 
+use Nextras\Orm\Repository\Repository;
+
 /**
  * @method Article|NULL getById($id)
  */
-class ArticlesRepository extends Nextras\Orm\Repository\Repository
+class ArticlesRepository extends Repository
 {
     /**
      * @return string[]
@@ -65,11 +71,13 @@ Pak je tu ještě jedna třída, kterou prozatím můžeme chápat jako agregát
 ```php
 <?php
 
+use Nextras\Orm\Model\Model;
+
 /**
  * @property-read ArticlesRepository    $articles
  * @property-read CategoriesRepository  $categories
  */
-class Orm extends Nextras\Orm\Model\Model
+class Orm extends Model
 {
 }
 ```
@@ -120,7 +128,11 @@ class ArticlesServise {
     }
 
     public function createArticleWithCategory() {
-        $this->orm->articles->add('muj-clanek', 'Můj článek', 'Skvělý obsah :)');
+        $this->orm->articles->add(
+            'muj-clanek',
+            'Můj článek',
+            'Skvělý obsah :)'
+        );
         $this->orm->categories->add('nova kategorie');
         $this->orm->flush();
     }
@@ -153,6 +165,7 @@ use Tester;
 use Tester\Assert;
 use Nette\Application;
 use Nette\Application\Responses\TextResponse;
+use Nette\Bridges\ApplicationLatte\Template;
 
 $container = require __DIR__ . '/../../bootstrap.php';
 
@@ -172,7 +185,11 @@ class ArticlePresenterTest {
     {
         /** @var Orm $orm */
         $orm = $this->container->getService('orm.model');
-        $user = $orm->articles->add('muj-clanek', 'Můj článek', 'Skvělý obsah :)');
+        $user = $orm->articles->add(
+            'muj-clanek',
+            'Můj článek',
+            'Skvělý obsah :)'
+        );
         $orm->flush();
     }
 
@@ -192,14 +209,15 @@ class ArticlePresenterTest {
     /**
      * @return Tester\DomQuery
      */
-    private function runPresenter($presenterName, $method, array $params, array $post) {
+    private function runPresenter($presenterName, $method, array $params, array $post)
+    {
         $presenterFactory = $this->container->getService('application.presenterFactory');
         $presenter = $presenterFactory->createPresenter($presenterName);
         $presenter->autoCanonicalize = false;
         $request = new Application\Request($presenterName, $method, $params, $post);
         $response = $presenter->run($request);
 
-        Assert::type(\Nette\Bridges\ApplicationLatte\Template::class, $response->getSource());
+        Assert::type(Template::class, $response->getSource());
         $html = (string) $response->getSource();
         $dom = Tester\DomQuery::fromHtml($html);
 
