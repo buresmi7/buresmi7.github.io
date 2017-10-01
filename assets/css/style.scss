@@ -17,6 +17,11 @@ a[href^="https://buresmi7.github.io/"]:after {
   margin: 0;
 }
 
+a:href {
+  font-weight: normal;
+  text-decoration: underline;
+}
+
 h1 a,
 h2 a {
   color: #393939;
