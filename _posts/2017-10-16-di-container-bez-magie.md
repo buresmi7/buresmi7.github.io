@@ -14,5 +14,5 @@ Krom jiného jsem zjistil, že není potřeba generovat žádnou keš, netřeba 
 
 Naštěstí jsem si našel trochu času a pustil se do měření a s výsledkem jsem spokojený, protože vlastní DI kontejner pomalejší není. Celý test jsem dal [sem](https://github.com/buresmi7/di-container-speed-test), kde je k nahlédnutí jak kód tak i výsledky.
 
-Takže vzhůru, začnětě všichni psát své vlastní DI kontejnery. Anebo si prohlédněte alespoň ten, který jsme napsali společně s kolegou Tomášem: [SimpleDI](https://github.com/Travelport-Czech/SimpleDi).
+Takže vzhůru ke strojům a všichni začněte psát své vlastní DI kontejnery. Anebo si prohlédněte alespoň ten, který jsme napsali společně s kolegou Tomášem: [SimpleDI](https://github.com/Travelport-Czech/SimpleDi).
 
