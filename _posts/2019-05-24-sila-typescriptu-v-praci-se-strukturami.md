@@ -67,7 +67,6 @@ První ukázka naznačuje, že Typescript opravdu nedovolí bojovat každému tr
 
 Zde je již funkční příklad, na kterém je vidět jak lehce bez žádných dalších definic struktur vytvoříme pouze trpaslíky, kteří umí bojovat:
 ```typescript
-// priklad 2
 (trpaslici: Trpaslik[]) => {
 	const bojovnici = trpaslici.map((trpaslik) => {
 		if (!trpaslik.znalostBoje) {
