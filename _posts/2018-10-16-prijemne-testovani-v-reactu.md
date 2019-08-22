@@ -1,10 +1,7 @@
 ---
-layout: posts
+layout: post
 title: Příjemné testování v Reactu
-category: programovani
-category_title: Programování
-tags: []
-comments: true
+categories: [Programování]
 ---
 Už je to pár měsíců, co jsem začal psát aplikaci v Reactu (konečně!) a nebyla by to pořádná aplikace, kdyby něměla nějaké ty testy. Kromě unit testů mám rád testy, které přímo pracují s UI, jsou komplexní a otestují celý proces, který provádí uživatel. A jeden takový chci ukázat. Pro test jsem použil knihovnu `jsdom` místo `Enzyme`, protože mi přišlo jednoduší testování včetně vnořených komponent. Nebylo to jednoduché ale po mnoha testech a mnoha přepisování, myslím, že jsem spokojený s podobou testů. Bezvadné je, že to funguje i s Reduxem. Trochu oříšek bylo čekání na načtení dat. Původně jsem to řešil přes `setTimeout()`, který zařadil další zpracování na konec smyčky vykonávaných příkazů. Nakonec pro hezký zápis používám knihovnu `timeout-as-promise`. A teď s radostí do dalších testů.
 

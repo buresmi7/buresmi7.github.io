@@ -1,10 +1,7 @@
 ---
-layout: posts
+layout: post
 title: Dramaticky jednoduché GUI pro aplikace příkazové řádky (Windows OS)
-category: programovani
-category_title: Programování
-tags: []
-comments: true
+categories: [Programování]
 ---
 To se jsem se zase jednou dostal do pěkně svízelné situace, když jsem kývnul na prosbu naprogramovat jednoduchou aplikaci. Vypadalo to na hodinku práce a abych trochu zamachroval, prohlásil jsem, že to je na 5 minut - za to si dlužím ještě nafackovat. Samozřejmě to trvalo asi 3 hodiny a to bzl teprve začátek.
 
@@ -19,7 +16,7 @@ Už jsem byl bezradný ale náhoda mě přivedla na Stackoverflow.com, kde jsem 
 
 Takhle to vypadá v praxi:
 
-![Video](/assets/posts/2019-03-18-dramaticky-jednoduche-gui/video.gif)
+![Video](/images/posts/2019-03-18-dramaticky-jednoduche-gui/video.gif)
 
 A takhle vypadá pod kapotou `run.bat`:
 ```batch

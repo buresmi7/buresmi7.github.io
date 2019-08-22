@@ -1,12 +1,9 @@
 ---
-layout: posts
+layout: post
 title: Přichází doba bezhlavého chromáka
-category: programovani
-category_title: Programování
-tags: []
-comments: true
+categories: [Programování]
 ---
-Možná jste zaznamenali, že Microsoft Edge přechází na stejné jádro jako Google Chrome a s tím i tezi, že internet ovládne jedno vykreslovací jádro, potažmo jedem webový prohlížeč. 
+Možná jste zaznamenali, že Microsoft Edge přechází na stejné jádro jako Google Chrome a s tím i tezi, že internet ovládne jedno vykreslovací jádro, potažmo jeden webový prohlížeč. 
 
 Má to spoustu výhod i nevýhod, o kterých se dá dlouze spekulovat, ale já bych rád upozornil, že prohlížeč Chrome začíná dominovat i na jiném poli. Mám na mysli Headless Chrome, neboli variantu, kterou lze pouštět a ovládat strojove přes API.
 

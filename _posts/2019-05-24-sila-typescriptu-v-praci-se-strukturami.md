@@ -1,10 +1,7 @@
 ---
-layout: posts
+layout: post
 title: Síla Typescriptu v práci se strukturami
-category: programovani
-category_title: Programování
-tags: []
-comments: true
+categories: [Programování]
 ---
 Už nějaký ten měsíc programuji v Typescriptu a hlavou se mi často honí, proč je to tak zábavnější než jazyky, se kterými jsem se dosud setkal. Jmenovitě C++, PHP, Javascript. Typescript kombinuje ze všech něco a to zásadní je typová kontrola, známá syntaxe, rychlé prototypování. Ovšem hlavní síla podle mě je a i podle jiných, od kterých to slýchám když chodím okolo kuřáckého koutku, kde se samozřejmě živě diskutuje o všem možném. I o Typescriptu.
 

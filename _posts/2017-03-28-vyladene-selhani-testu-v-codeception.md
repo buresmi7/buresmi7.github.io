@@ -1,10 +1,7 @@
 ---
-layout: posts
+layout: post
 title: Vyladěné selhání testu v Codeception
-category: programovani
-category_title: Programování
-tags: []
-comments: true
+categories: [Programování]
 ---
 Codeception je skvělý nástroj pro psaní selenium testů. V práci jej používáme čím dál více a zvlášť náš tester si je nemůže vynachválit. Protože já píší pouze malé testy, případně nastřeluji koncept psaní, moc často testy nepouštím a neladím je. Mám vždycky radost, když s nějakou potřebnou vychytávkou přijde právě tester. Ten píše ty velké regresní testy u kterých vždycky narazí na nějaký zádrhel nebo nepříjemnost. A s jednou takovou nepříjemností byl u mě také napsoledy.
 

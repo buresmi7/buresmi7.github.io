@@ -1,10 +1,7 @@
 ---
-layout: posts
+layout: post
 title: Co mi dala lezecká stěna
-category: ostatni
-category_title: Ostatní
-tags: []
-comments: true
+categories: [Ostatní]
 ---
 Nejsem žádný lezec, prostě jen příležitostní lezec, schopný lézt stěny do 5+. Mockrát na stěně řeším únavu stisku ruky. Podvědomě držím chyty maximální silou, a když se zaseknu, ruce takto dlouho nevydrží. Často pak zjistim, ze by stačilo lehčí chyty držet mnohem menší silou. A tak si musím před výstupem stále opakovat: Povol ty ruce, hned jak je to možné.
 

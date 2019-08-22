@@ -1,10 +1,7 @@
 ---
-layout: posts
+layout: post
 title: Rychlý našeptávač českých měst
-category: programovani
-category_title: Programování
-tags: []
-comments: true
+categories: [Programování]
 ---
 Nedávno jsem řešil rychlost našeptávače měst ve formuáři. Jednalo se o projekt v Nette a tenkrát jsem zvolil nejjednodušší variantu: vložit cca 6000 měst do javascriptového pole a při zadání alespoň tří znaků skript prohledával celé pole. Pro lepší seřazení jsem použil přiřazení váhy každému městu které odpovídalo zadání. Tohle celé mělo jednu velkou nevýhodu. Bylo to pomalé. Ne na stolním počítači s dostatkem výkonu, ale na slabších noteboocích či slim stanicích byla odezva někdy i více jak 5 sekund.
 
@@ -40,7 +37,7 @@ Další optimalizace je atribut "ascii", který by se jinak musel generovat při
 
 Pro názornost přikládám i graf odezvy:
 
-![Graf odezvy](/assets/posts/2016-01-22-rychly-naseptavac-ceskych-mest/latency.png)
+![Graf odezvy](/images/posts/2016-01-22-rychly-naseptavac-ceskych-mest/latency.png)
 
 Výsledná rychlost v aplikaci se pohybuje mezi 200-500 ms, protože API s našeptávačem je volané skrze Nette ajax a Nette controller. Je to z důvodů, že API je zaheslované statickým heslem a PHP skript toto heslo skryje, narozdíl od přímého volání z javascriptu na frontendu. Do budoucna bych chtěl i tuto vrstvu vypustit.
 

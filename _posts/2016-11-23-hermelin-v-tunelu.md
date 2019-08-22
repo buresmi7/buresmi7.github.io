@@ -1,10 +1,7 @@
 ---
-layout: posts
+layout: post
 title: Hermelín v tunelu
-category: hermelin
-category_title: Hermelín
-tags: []
-comments: true
+categories: [Hermelín]
 ---
 To mě zase kamarád přemluvil na pivko po práci, a protože spojnice mezi našimi pracovištěmi se nachází mezi Karlínem a Žižkovem, hospodu jsme hledali v této lokalitě. Oblak cigaretového kouře nás odehnal od "Rock 'n' Pizza" a zahnal překvapivě hned vedle do baru TUNEL.
 
@@ -14,6 +11,6 @@ Sedli jsme si a společnost nám dělala hudba jako ze 70. let a dvojice v druh�
 
 Hermelín samotný byl naservírován netypicky s červenou paprikou. Byl však dobře uleželý a k dobrému pivu sedl výborně. Jen ty papričky chuťově neladily. Celkově hodnocení: 3.5/5.
 
-![Hermelín v baru TUNEL](/assets/posts/2016-11-23-hermelin-v-tunelu/hermelin_small.jpg)
+![Hermelín v baru TUNEL](/images/posts/2016-11-23-hermelin-v-tunelu/hermelin_small.jpg)
 
-[Originální fotka (1.6 MB)](/assets/posts/2016-11-23-hermelin-v-tunelu/hermelin_big.jpg)
+[Originální fotka (1.6 MB)](/images/posts/2016-11-23-hermelin-v-tunelu/hermelin_big.jpg)

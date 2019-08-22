@@ -1,10 +1,7 @@
 ---
-layout: posts
+layout: post
 title: Jak chutná Mexiko
-category: hermelin
-category_title: Hermelín
-tags: []
-comments: true
+categories: [Hermelín]
 ---
 Už dlouho jsem neměl příležitost přispět na blog něčím zajimavym a dnes se naskytla příležitost při zapíjení 30. narozenin kolegy z práce. Akce se konala v mnou přehlíženém podniku - Diego pivní bar. 
 
@@ -16,4 +13,4 @@ Ten mě totiž zaujal netradiční přílohou a tou jsou nakládané papričky j
 
 Za atmosféru, skvělý hermelín a dobré pivo dávám 5/5.
 
-![Hermelín po mexicku](/assets/posts/2017-06-12-jak-chutna-mexiko/hermelin_mexiko.jpg)
+![Hermelín po mexicku](/images/posts/2017-06-12-jak-chutna-mexiko/hermelin_mexiko.jpg)

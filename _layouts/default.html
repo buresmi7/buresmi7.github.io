@@ -1,68 +1,55 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>
-      {% if page.title %}{{ page.title }} - {% endif %}
-      {{ site.title | default: site.github.repository_name }}
-    </title>
+    <title>{% if page.title and page.title != "" %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    {% seo %}
+    {% include meta.html %}
 
-    <meta name="description" content="{% if page.title %}{{ page.content | strip_html | truncatewords:20, "..." }}{% else %}{{ site.meta_description }}{% endif %}">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
 
-    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}" />
-
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <meta name="viewport" content="width=device-width">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <meta name="theme-color" content="#000000">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/images/favicon-32x32.png">
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
-        <h1><a href="/">{{ site.title | default: site.github.repository_name }}</a></h1>
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
+    <div id="bar"></div>
+    <div class="wrapper-container">
+      <div class="wrapper-masthead">
+        <div class="container">
+          <header class="masthead clearfix">
+            <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.baseurl }}{{ site.avatar }}" /></a>
 
-      </header>
-      <section>
+            <div class="site-info">
+              <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+              <p class="site-description">{{ site.description }}</p>
+            </div>
 
-      {{ content }}
+            <nav>
+              <a href="{{ site.baseurl }}/o-me" class="menu-about">o mě</a>
+              <a href="{{ site.baseurl }}/hledani">hledej</a>
+              <a href="{{ site.baseurl }}/kategorie">kategorie</a>
+            </nav>
+          </header>
+        </div>
+      </div>
 
-      </section>
-      <footer>
-        <p><i>Ahoj, jmenuji se Michal Bureš a toto je můj blog věnovaný hermelínům,
-           programování a vyjímečně úvahám o životě. Živím se jako PHP programátor, občas také přispěji do projektů na <a href="{{ site.github.owner_url }}">GitHub</a>.
-           Baví mě webový design, hra barokní hudby na kytaru a sportovní lezení. Miluji bláznivé čundry, svou ženu a zvykám si na nové zvíře v domácnosti, kterému se obvykle říká dítě.
-           </i></p>
-           <p>Nové články na tomto webu můžete sledovat pomocí <a href="https://twitter.com/mikebures">Twitteru</a>.</p>
-           <p><small>Vytvořeno pomocí GitHub Pages &mdash; Web používá Google Analytics</small></p>
-      </footer>
+      <div class="wrapper-main">
+        <div id="main" role="main" class="container">
+          {{ content }}
+        </div>
+      </div>
+
+      <div class="wrapper-footer">
+        <div class="container">
+          <footer class="footer">
+            {% include svg-icons.html %}
+          </footer>
+        </div>
+      </div>
     </div>
-    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
 
-
-  <!-- Load Facebook SDK for JavaScript -->
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/cs_CZ/sdk.js#xfbml=1&version=v2.8&appId=491054724365254";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
-
-  {% if site.google_analytics %}
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-        ga('create', '{{ site.google_analytics }}', 'auto');
-        ga('send', 'pageview');
-    </script>
-  {% endif %}
+    {% include analytics.html %}
   </body>
 </html>

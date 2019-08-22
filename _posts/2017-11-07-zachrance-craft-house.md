@@ -1,10 +1,7 @@
 ---
-layout: posts
+layout: post
 title: Nadutost města pražského a záchrance Craft House
-category: hermelin
-category_title: Hermelín
-tags: []
-comments: true
+categories: [Hermelín]
 ---
 Je to pár dní co pracuji v samém srdci republiky, na Václavském náměstí. Spousta cizinců, drahé obědy a superdrahé ohozy důležitých manažerů a jejich arogantní a povýšené pohledy, s tím vším jsem počítal ale zapomněl jsem na nadutost místní obsluhy v některých hospodách. A dnes jsem měl příležitost se o tom přesvědčit na vlastní kůži.
 
@@ -14,4 +11,4 @@ A tak jsme zamířili na Honzův návrh kousek vedle do pivního baru - Craft Ho
 
 A tak byl další výlet za objevováním hermelínů již dál příjemný a poklidný - krom nás tam byli pouze další tři hosté. Hodnocení 4/5 a poučení na závěr: nevěřte ničemu co je napsáno na internetu, zvlášť týká-li se to jídla.
 
-![Hermelín v Craft House](/assets/posts/2017-11-07-zachrance-craft-house/hermelin_craft_house.jpg)
+![Hermelín v Craft House](/images/posts/2017-11-07-zachrance-craft-house/hermelin_craft_house.jpg)

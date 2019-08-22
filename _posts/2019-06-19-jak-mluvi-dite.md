@@ -1,10 +1,7 @@
 ---
-layout: posts
+layout: post
 title: Jak mluví dítě
-category: ostatni
-category_title: Ostatní
-tags: []
-comments: true
+categories: [Ostatní]
 ---
 Asi to zná každý rodič, ale rozhodně o tom žádný moc nemluví. Mě vlastnost dítěte v používání zkratek slov trochu překvapila a o to víc mě překvapilo jak se jich dítě nechce vzdát i když už umí všecka písmena a má všecky předpoklady k tomu slovo říci hezky celé.
 

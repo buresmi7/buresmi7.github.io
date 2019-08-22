@@ -1,10 +1,7 @@
 ---
-layout: posts
+layout: post
 title: Testování Nette presenterů s Nextras Orm
-category: programovani
-category_title: Programování
-tags: []
-comments: true
+categories: [Programování]
 ---
 Nedávno jsem se dostal k zajímavé pracovní příležitosti spolupracovat na rozvoji jednoho pracovního portálu jako Team Leader. Kromě rozdávání práce a její kontroly jsem měl za úkol i navrhnout způsoby a implementaci testů. Jednalo se o starší aplikaci napsanou v Zendu 1. Ačkoliv aplikace byla rozdělena v klasickém poměru Model-View-Controler, většina logiky byla v šablonách, pokud se tomu tak dalo vůbec říkat. Plán byl přepsat aplikaci postupně do Nette. Před mým příchodem byl již vybrán i framework pro práci s databází - [Nextras Orm](https://nextras.org/orm). Takže jsem se pustil do jeho studia.
 

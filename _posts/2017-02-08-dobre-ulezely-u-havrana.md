@@ -1,10 +1,7 @@
 ---
-layout: posts
+layout: post
 title: Dobře uleželý U Havrana
-category: hermelin
-category_title: Hermelín
-tags: []
-comments: true
+categories: [Hermelín]
 ---
 Náročná noc a nelehký den v praci. Ne to není mládenecké fňukání alfa samce, co vydělává velké peníze sezením na poradách. To je fňukání půlročního otce nad každodenní realitou. Není náhodou, že dnes jdu s mým kamarádem, tříměsíčním otcem, na hermelín. Postěžovat si na ratolesti a pochválit sami sebe jak výborně se držíme. Kamarád vybral hospodu U Havrana - na Ípáku vedle Pubu - který mi připomněl časy, kdy jsme ještě pili pivo čistě ze soutěživosti. Brr. 
 
@@ -15,4 +12,4 @@ Dnešní verdikt zní: 4/5.
 
 A pro ty co tento podnik neznají, přikládám souřadnice: 50.0761158N, 14.4283756E
 
-![Hermelín v hospodě U Havrana](/assets/posts/2017-02-08-dobre-ulezely-u-havrana/hermelin_small.jpg)
+![Hermelín v hospodě U Havrana](/images/posts/2017-02-08-dobre-ulezely-u-havrana/hermelin_small.jpg)

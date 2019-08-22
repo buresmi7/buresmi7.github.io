@@ -1,10 +1,7 @@
 ---
-layout: posts
+layout: post
 title: Rychlovka v pivovaru
-category: hermelin
-category_title: Hermelin
-tags: []
-comments: true
+categories: [Hermelín]
 ---
 Původně to měla být dřina na lezecké stěně, výstava orchestrů svalů v upnutých tričkách udřeně obepínající pupky. Ale díky chronické nedochvilnosti mého spolulezce, jsme konstatovali ze zbyvající hodinu stihnem leda jedno pivo. A nejbližší lokál byl u pivovaru Staropramen Na Knížecí - Potrefená Husa. Je to můj oblíbený podnik a tak jsem se těšil. Zde padla volba na nefiltrovane pivo - mé nejoblíbenější - a k pivu jsme se oba shodli na talíři s variaci sýru. Protože už nejsem takové prase co kdysi a snažím se tučné jídlo omezovat, stačila nám dohromady jedna porce.
 
@@ -14,4 +11,4 @@ Největší vadou na našem kulinářském zážitku nakonec byl nedostatek chle
 
 Dnešní hodnocení je 4/5.
 
-![Hermelín v Pivovaru](/assets/posts/2019-04-11-rychlovka-v-pivovaru/hermelin-pivovar.jpg)
+![Hermelín v Pivovaru](/images/posts/2019-04-11-rychlovka-v-pivovaru/hermelin-pivovar.jpg)

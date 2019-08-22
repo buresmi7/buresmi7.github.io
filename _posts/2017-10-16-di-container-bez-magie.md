@@ -1,10 +1,7 @@
 ---
-layout: posts
+layout: post
 title: DI Container bez magie
-category: programovani
-category_title: Programování
-tags: []
-comments: true
+categories: [Programování]
 ---
 Občas není lehké přesvědčit kolegy o vašem skvělém nápadu a pak se občas vyplatí prostě ten nápad uskutečnít a konstatovat, že to funguje a všem se ulehčí život. Tak nějak jsem kdysi v pašoval do jedné staré aplikace [Nette DI Container](https://github.com/nette/di). Popravdě ten argument je jak kladivo, který přesvědčil i mě, ačkoliv jsem pořádně netušil jak takový kontejner funguje uvnitř. 
 
