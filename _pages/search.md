@@ -5,7 +5,7 @@ permalink: /hledani/
 ---
 
 <div id="search-container">
-    <input type="text" id="search-input" placeholder="Search through the blog posts...">
+    <input type="text" id="search-input" placeholder="Prohledej všechny články...">
     <ul id="results-container"></ul>
 </div>
 
