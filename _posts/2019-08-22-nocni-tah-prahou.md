@@ -3,11 +3,12 @@ layout: post
 title: Noční tah Prahou
 categories: [Ostatní]
 ---
-Nejsem diskotekovy typ. Ne opravdu ne. Tuhle misi jsem pojal jako průzkum prostředí které z hloubi duše nemám rád - v živé paměti mám tragické pokusy zapadnout na taneční parket jako náctileté ucho, můj bože. Ale obklopen kolegy z práce, zvlášť slovákem co neumí pít, několika otci od rodin a dvěma věčnými mládenci, jsem seznal, že by to po letech mohla být docela zábavná exkurze. 
+Nejsem diskotékový typ. Ne opravdu ne. Tuhle misi jsem pojal jako průzkum prostředí které z hloubi duše nemám rád - v živé paměti mám tragické pokusy zapadnout na taneční parket jako náctileté ucho, můj bože. Ale obklopen kolegy z práce, zvlášť slovákem co neumí pít, několika otci od rodin a dvěma věčnými mládenci, jsem seznal, že by to po letech mohla být docela zábavná exkurze. 
 
 Začátek v Cobra baru, byl klasicky narozeninový večírek. Hodně piva, jeden Long Island, výborná chobotnice k jídlu. Jo trochu exotika ale vcelku příjemné. Využil jsem situace a donutil jsem ostatní vsadit se jaké oddělení vyhraje sázku v běhání na Vítkově. No až se tohle dozví oddělení programátorů, bude měla, protože většina z nich na večírek ani nedorazila.
 
-No kromě Slováka pod obraz byly všichni v pohodě a tak se vyrazili do dalšího baru. Pěšky do Punk Baru na Holešovicích. Za zmínku stojí ještě Radek, kterého jsme museli párkrát vzbudit.
+No kromě Slováka pod obraz byly všichni v pohodě a tak se vyrazili do dalšího baru. Pěšky do Cross Baru na Holešovicích
+. Za zmínku stojí ještě Radek, kterého jsme museli párkrát vzbudit.
 
 Roky jsem jezdil okolo do práce a myslel si ze to je nějaká umělecká instalace. Ne je to Punk Bar, bar jak ze sci-fi filmu osmdesátých let. Skvěle prostředí a DJ Japonec, na hrozný hudební žánr to byl ucházející výkon.
 
