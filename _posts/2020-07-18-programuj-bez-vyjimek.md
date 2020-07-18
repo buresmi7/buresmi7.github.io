@@ -33,6 +33,8 @@ try {
 
 Ano pro mě zásadní problém je `let`, které používat nechci - chci přiřadit jméno a dále ho neměnit, ovšem `let` mi to dovolí a chyba je na světě. Navíc celý konstrukt je dlouhý a zbytečně nečitelný.
 
+Pak je tu dilema s tím, jaký kód do try catche vložit. Poučka zní, že by to měl být nezbytně nutný kód. A co když kečuji nad několika funkcemi, je to dobře? Nikdy si nejsem jistý.
+
 Další důvod proč vyjímky nepoužívat je jejich tendence probublávat vrstvami. Tohle probublání si může dovolit pouze `LogicException`. V praxi ale vidím, že probublá kde co, ale často i, že se ignoruje vůbec existence těchto dvou typů vyjímek.
 
 V ideálním kódu by měla každá vrtva zabalit chybu do nějaké abstrakce a předchozí chybu uložit někam k podrobnostem. Stejně tak jako každá vrstva vytváří abstrakci, musí stejnou abstrakci vytvořit i pro chyby.
