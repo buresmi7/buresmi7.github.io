@@ -3,7 +3,7 @@ layout: post
 title: Programuj bez výjimek!
 categories: [Programování]
 ---
-Dlouho, dlouho mě trápí kód ovládaný vyjímkami. Nikdy nevím jaká výjimka na mě vyskočí. A strach je podobný jako dopis od finančího úřadu.
+Dlouho, dlouho mě trápí kód ovládaný výjimkami. Nikdy nevím jaká výjimka na mě vyskočí. A strach je podobný jako dopis od finančího úřadu.
 V PHP je pokus to řešit anotacemi:
 
 ```php
