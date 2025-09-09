@@ -57,10 +57,19 @@ export function getAllPosts(): PostData[] {
 }
 
 export async function markdownToHtml(markdown: string): Promise<string> {
+  // Process sidenotes before remark processing
+  let sidenoteCounter = 0;
+  const processedMarkdown = markdown.replace(/<sidenote(?:\s+class="([^"]*)")?>([^]*?)<\/sidenote>/gs, (match, className, content) => {
+    sidenoteCounter++;
+    const sidenoteId = `sn-${sidenoteCounter}`;
+    const sidenoteCssClass = className ? `sidenote ${className}` : 'sidenote';
+    return `<label for="${sidenoteId}" class="sidenote-toggle">⊕</label><input type="checkbox" id="${sidenoteId}" class="sidenote-toggle" /><span class="${sidenoteCssClass}">${content.trim()}</span>`;
+  });
+
   const result = await remark()
     .use(gfm) // GitHub Flavored Markdown
     .use(html, { sanitize: false })
-    .process(markdown);
+    .process(processedMarkdown);
 
   // Fix image paths to point to public/images (served as /images)
   const htmlContent = result.toString()

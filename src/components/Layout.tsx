@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -8,14 +7,7 @@ interface LayoutProps {
 export default function Layout({ children }: LayoutProps) {
   return (
     <div>
-      <header>
-        <h1>Hermelínové peklo</h1>
-        <p className="author">Michal Bureš</p>
-      </header>
-      
-      <main>
-        {children}
-      </main>
+      {children}
       
       <footer>
         <section>

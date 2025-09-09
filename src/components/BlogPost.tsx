@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { PostData, formatDate } from '@/lib/posts';
 
 interface BlogPostProps {
@@ -8,26 +9,34 @@ interface BlogPostProps {
 
 export default function BlogPost({ post, htmlContent }: BlogPostProps) {
   return (
-    <article>
-      <header>
-        <h1>{post.title}</h1>
+    <>
+      <header style={{ textAlign: 'center', marginBottom: '2rem' }}>
+        <h1 style={{ marginBottom: '0.5rem' }}>{post.title}</h1>
         <div className="post-meta">
-          <span className="post-date">{formatDate(post.date)}</span>
-          {post.categories.length > 0 && (
-            <div className="categories">
-              {post.categories.map((category) => (
-                <span key={category} className="category-tag">
-                  {category}
+          <p className="center">
+            Hermelínové peklo
+          </p>
+          <small>
+            <span className="post-date">{formatDate(post.date)}</span>
+            {post.categories.length > 0 && (
+              <>
+                {' • '}
+                <span className="categories">
+                  {post.categories.join(', ')}
                 </span>
-              ))}
-            </div>
-          )}
+              </>
+            )}
+          </small>
         </div>
       </header>
-      
-      <section 
-        dangerouslySetInnerHTML={{ __html: htmlContent }}
-      />
-    </article>
+
+      <main>
+        <article>
+          <section
+            dangerouslySetInnerHTML={{ __html: htmlContent }}
+          />
+        </article>
+      </main>
+    </>
   );
 }
