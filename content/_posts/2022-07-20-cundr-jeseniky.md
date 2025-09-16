@@ -5,7 +5,7 @@ categories: [Ostatní]
 perex: Neuvěřitelné se stalo realitou - po letech jsem vyrazil na čundr! Z celé party jsme se na Hlavním nádraží sešli sice pouze dva. Ale plán projít hřebeny Jeseníků po červené z Ramzové až do Rýmařova za tři dny se zdařil.
 ---
 
-A neuvěřitelné se stalo realitou, po letech jsem vyrazil na čundr! Ovšem jak to tak bývá, z mnoha slibů celé party jsme
+<sidenote class="left">**AI Shrnutí:** Třídenní pěší túra po hřebenech Jeseníků z Ramzové do Rýmařova. Z původní party se sešli pouze dva účastníci. Trasa vedla po červené značce přes Šerák, Keprník, Vřesovou studánku, Červenohorské sedlo, Praděd až do Rýmařova. Nocleh v přírodě u Kamenného oka a v přístřešku ve Velké kotlině. Kombinace krásných výhledů, fyzické námahy a přátelství.</sidenote> A neuvěřitelné se stalo realitou, po letech jsem vyrazil na čundr! Ovšem jak to tak bývá, z mnoha slibů celé party jsme
 se na Hlavním nádraží v Praze sešli pouze dva. Fanda a já - shodou náhod je to na chlup stejné složení co poslední 
 čundr o pár let dříve. Náš cíl: Ramzová - Jeseníky. Projít hřebeny po červené až do Rýmařova za tři dny. Snažil jsem se 
 donutit Fandu aby, toho moc nebral, ale na 9 kg váhy mého batohu se rozhodně nedostal. Jak to však často bývá, i zde 
