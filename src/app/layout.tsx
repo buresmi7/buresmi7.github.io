@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import PrismLoader from "@/components/PrismLoader";
 
 export const metadata: Metadata = {
   title: "Hermelínové peklo",
@@ -22,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="cs">
       <body className="antialiased">
+        <PrismLoader />
         {children}
       </body>
     </html>

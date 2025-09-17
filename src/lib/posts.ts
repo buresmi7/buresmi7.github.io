@@ -72,8 +72,12 @@ export async function markdownToHtml(markdown: string): Promise<string> {
     .process(processedMarkdown);
 
   // Fix image paths to point to public/images (served as /images)
-  const htmlContent = result.toString()
+  let htmlContent = result.toString()
     .replace(/src="\/images\//g, 'src="/images/');
+
+  // Add language classes to code blocks for PrismJS
+  htmlContent = htmlContent.replace(/<pre><code class="language-(\w+)">/g, '<pre class="language-$1"><code class="language-$1">');
+  htmlContent = htmlContent.replace(/<pre><code(?!\s+class)>/g, '<pre class="language-bash"><code class="language-bash">');
 
   return htmlContent;
 }
