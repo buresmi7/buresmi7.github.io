@@ -1,9 +1,21 @@
+/* PrismJS syntax highlighting theme */
+@import "prismjs/themes/prism-solarizedlight.css";
+
 /* LaTeX.css - Clean academic paper styling */
 @import "latex.css/style.css";
 
-/* PrismJS syntax highlighting theme */
-@import "prismjs/themes/prism.css";
-
 body {
   background-color: #fffff8;
+}
+
+/* Smaller font size for code blocks */
+pre[class*="language-"],
+code[class*="language-"] {
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+
+/* Inline code styling */
+:not(pre) > code[class*="language-"] {
+  font-size: 0.9em;
 }

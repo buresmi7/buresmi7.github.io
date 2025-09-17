@@ -4,6 +4,11 @@ import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
 import gfm from 'remark-gfm';
+import Prism from 'prismjs';
+import loadLanguages from 'prismjs/components/';
+
+// Load additional languages for server-side highlighting
+loadLanguages(['bash', 'json', 'typescript', 'php', 'python', 'css', 'sql', 'yaml', 'docker']);
 
 export interface PostData {
   slug: string;
@@ -75,9 +80,41 @@ export async function markdownToHtml(markdown: string): Promise<string> {
   let htmlContent = result.toString()
     .replace(/src="\/images\//g, 'src="/images/');
 
-  // Add language classes to code blocks for PrismJS
-  htmlContent = htmlContent.replace(/<pre><code class="language-(\w+)">/g, '<pre class="language-$1"><code class="language-$1">');
-  htmlContent = htmlContent.replace(/<pre><code(?!\s+class)>/g, '<pre class="language-bash"><code class="language-bash">');
+  // Server-side syntax highlighting with Prism.js
+  htmlContent = htmlContent.replace(/<pre><code class="language-(\w+)">([\s\S]*?)<\/code><\/pre>/g, (match, language, code) => {
+    // Decode HTML entities in the code
+    const decodedCode = code
+      .replace(/&lt;/g, '<')
+      .replace(/&gt;/g, '>')
+      .replace(/&amp;/g, '&')
+      .replace(/&quot;/g, '"')
+      .replace(/&#39;/g, "'");
+
+    // Check if the language is supported by Prism
+    const prismLanguage = Prism.languages[language];
+    if (prismLanguage) {
+      const highlightedCode = Prism.highlight(decodedCode, prismLanguage, language);
+      return `<pre class="language-${language}"><code class="language-${language}">${highlightedCode}</code></pre>`;
+    }
+    
+    // Fallback for unsupported languages
+    return `<pre class="language-${language}"><code class="language-${language}">${code}</code></pre>`;
+  });
+
+  // Handle code blocks without language specification - default to bash
+  htmlContent = htmlContent.replace(/<pre><code(?!\s+class)>([\s\S]*?)<\/code><\/pre>/g, (match, code) => {
+    // Decode HTML entities in the code
+    const decodedCode = code
+      .replace(/&lt;/g, '<')
+      .replace(/&gt;/g, '>')
+      .replace(/&amp;/g, '&')
+      .replace(/&quot;/g, '"')
+      .replace(/&#39;/g, "'");
+
+    // Highlight as bash
+    const highlightedCode = Prism.highlight(decodedCode, Prism.languages.bash, 'bash');
+    return `<pre class="language-bash"><code class="language-bash">${highlightedCode}</code></pre>`;
+  });
 
   return htmlContent;
 }
