@@ -5,27 +5,40 @@ categories: [Ostatní]
 perex: Neuvěřitelné se stalo realitou - po letech jsem vyrazil na čundr! Z celé party jsme se na Hlavním nádraží sešli sice pouze dva. Ale plán projít hřebeny Jeseníků po červené z Ramzové až do Rýmařova za tři dny se zdařil.
 ---
 
-<sidenote class="left">**AI Shrnutí:** Třídenní pěší túra po hřebenech Jeseníků z Ramzové do Rýmařova. Z původní party se sešli pouze dva účastníci. Trasa vedla po červené značce přes Šerák, Keprník, Vřesovou studánku, Červenohorské sedlo, Praděd až do Rýmařova. Nocleh v přírodě u Kamenného oka a v přístřešku ve Velké kotlině. Kombinace krásných výhledů, fyzické námahy a přátelství.</sidenote> A neuvěřitelné se stalo realitou, po letech jsem vyrazil na čundr! Ovšem jak to tak bývá, z mnoha slibů celé party jsme
+A neuvěřitelné se stalo realitou, po letech jsem vyrazil na čundr! Ovšem jak to tak bývá, z mnoha slibů celé party jsme
 se na Hlavním nádraží v Praze sešli pouze dva. Fanda a já - shodou náhod je to na chlup stejné složení co poslední 
 čundr o pár let dříve. Náš cíl: Ramzová - Jeseníky. Projít hřebeny po červené až do Rýmařova za tři dny. Snažil jsem se 
 donutit Fandu aby, toho moc nebral, ale na 9 kg váhy mého batohu se rozhodně nedostal. Jak to však často bývá, i zde 
-je to hlavně o hlavě a tak se stalo, že po prvním kopci jsem to byl nakonec já kdo navrhl, svézt se lanovkou <sidenote>Lanová dráha Černava – Šerák ![keprnik](/images/posts/2022-07-20-cundr-jeseniky/cundr-jeseniky-3.jpg)</sidenote>. Na mou 
-obranu je nutné říci, že kopec to byl tak hrozný, že ještě třetí den padaly vtipy o tom, že bychom bez lanovky stále ten kopec 
+je to hlavně o hlavě a tak se stalo, že po prvním kopci jsem to byl nakonec já kdo navrhl, svézt se lanovkou (Lanová dráha Černava – Šerák). Na mou
+obranu je nutné říci, že kopec to byl tak hrozný, že ještě třetí den padaly vtipy o tom, že bychom bez lanovky stále ten kopec
 ještě šlapali.
 
+![Lanová dráha Černava – Šerák](/images/posts/2022-07-20-cundr-jeseniky/cundr-jeseniky-3.jpg)
+
 Kousek od lanovky jsme se občerstvili na Šeráku a pokochali pohledy nejen do krajiny. Do mě spadla česněčka a do Fandy
-hermelín. Ochutnal jsem od něj kousek a za recenzi to ani nestojí. Průměrný kousek a málo. Alespoň holky tam byli 
-moc hezké. Pokračovali jsme na vrchol Keprník <sidenote class="left">Keprník ![keprnik](/images/posts/2022-07-20-cundr-jeseniky/cundr-jeseniky-1.jpg)</sidenote>, kde byl fantastický panoramatický výhled. Další cíl jsme si určili Vřesovou studánku a to už bylo náročnější šlapání. U studánky jsme doplnili vodu a kousek nad ní u Kamenného oka <sidenote>Kamenné oko ![keprnik](/images/posts/2022-07-20-cundr-jeseniky/cundr-jeseniky-2.jpg)</sidenote> jsme rozbalili první tábor. Povečeřeli jsme Fandovu rajskou polévku (původně to byla omáčka, ale dali jsme nějak moc vody) a můj zeleninový salát z pytlíku a obojí nebylo vůbec špatné. Zhodnotili jsme západ slunce a porovnali čí mobil fotí lépe a s politováním musím říct, že Fandův mobil fotil západ slunce lépe než můj starší kompakt SONY CyberShot RX100. Odpadl s prvními hvězdami a příjemným pocitem pod hvězdami, které jsem už dlouho neviděl.
+hermelín. Ochutnal jsem od něj kousek a za recenzi to ani nestojí. Průměrný kousek a málo. Alespoň holky tam byli
+moc hezké. Pokračovali jsme na vrchol Keprník, kde byl fantastický panoramatický výhled.
+
+![Keprník](/images/posts/2022-07-20-cundr-jeseniky/cundr-jeseniky-1.jpg)
+
+Další cíl jsme si určili Vřesovou studánku a to už bylo náročnější šlapání. U studánky jsme doplnili vodu a kousek nad ní u Kamenného oka jsme rozbalili první tábor.
+
+![Kamenné oko](/images/posts/2022-07-20-cundr-jeseniky/cundr-jeseniky-2.jpg)
+
+Povečeřeli jsme Fandovu rajskou polévku (původně to byla omáčka, ale dali jsme nějak moc vody) a můj zeleninový salát z pytlíku a obojí nebylo vůbec špatné. Zhodnotili jsme západ slunce a porovnali čí mobil fotí lépe a s politováním musím říct, že Fandův mobil fotil západ slunce lépe než můj starší kompakt SONY CyberShot RX100. Odpadl s prvními hvězdami a příjemným pocitem pod hvězdami, které jsem už dlouho neviděl.
 
 Druhý den jsme se vydali směrem na Červenohorské sedlo, kde jsme si v podstatě k snídani dali pivo a došli na 
 civilizovaný záchod. Zde jsme se dopustili drobné navigační chybky, kdy jsme nechtěli šlapat do kopce po červené a 
 zvolili drobnou zacházku v domnění, že sice půjdeme dál ale po rovině. Výsledkem byla cesta nejen delší ale ke konci 
 i dosti kopcovitá. Mám pocit, že v té chvíli jsme zažívali oba krizi. Bolavé nohy, vedro a asfaltová cesta byla pro 
 naše kolena a záda nepříjemná. Lesní pěšina do prudkého kopce se zdála nekonečna ale nakonec jsme přece jen došli k 
-restouraci Švýcárna. Zde jsme doslova uhasili žízeň domácí limonádou a pivem. Bohužel jsem se zde uchýlil k druhé 
-dnešní chybě a dal si plněné knedlíky se zelím. A protože nás čekal poslední výšlap dne na Praděd <sidenote>Praděd ![keprnik](/images/posts/2022-07-20-cundr-jeseniky/cundr-jeseniky-4.jpg)</sidenote>, přecpaný, začal 
-jsem na tom být psychicky špatně. Tady mě Fanda podržel a na vrcholu jsme si dali pivo a kostky. Mám pocit, že 
-kostky mi ted den šly nad míru výtečně.
+restouraci Švýcárna. Zde jsme doslova uhasili žízeň domácí limonádou a pivem. Bohužel jsem se zde uchýlil k druhé
+dnešní chybě a dal si plněné knedlíky se zelím. A protože nás čekal poslední výšlap dne na Praděd, přecpaný, začal
+jsem na tom být psychicky špatně. Tady mě Fanda podržel a na vrcholu jsme si dali pivo a kostky.
+
+![Praděd](/images/posts/2022-07-20-cundr-jeseniky/cundr-jeseniky-4.jpg)
+
+Mám pocit, že kostky mi ted den šly nad míru výtečně.
 
 Sestup jsme provedli zkušeně až na Ovčárnu, kde jsme si na povzbuzení dali panáka. Už se začalo stmívat a my jsme 
 ještě úplně nevědeli, kde přespíme. Rozhodli jsme se pro přístřešek na naučné stezce Velká kotlina. Cesta byla ještě 
